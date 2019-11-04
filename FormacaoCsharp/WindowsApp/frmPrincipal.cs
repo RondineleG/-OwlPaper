@@ -16,8 +16,8 @@ namespace WindowsApp
             int numeroDaConta = 1;
            
             // Tipo que recebe numeros reais
-            double saldo = 100.0;
-            double valorDoSaque = 10.0;
+            double saldo = 10.0;
+            double valorDoSaque = 90.0;
             saldo -= valorDoSaque;
 
             if (saldo >= valorDoSaque)
@@ -25,7 +25,11 @@ namespace WindowsApp
                 saldo = saldo - valorDoSaque;
                 MessageBox.Show("Saque realizado com sucesso");
             }
-       
+            else
+            {
+                MessageBox.Show("Saldo Insuficiente");
+            }
+
         }
    
        public void MetodoAleatorioa()
