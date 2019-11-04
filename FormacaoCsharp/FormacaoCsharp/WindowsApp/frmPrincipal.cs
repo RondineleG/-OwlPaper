@@ -11,7 +11,7 @@ namespace WindowsApp
 
         private void brtClick_Click(object sender, System.EventArgs e)
         {
-
+            MessageBox.Show("Olá mundo C#");
         }
     }
 }
