@@ -19,8 +19,12 @@ namespace WindowsApp
             double saldo = 10.0;
             double valorDoSaque = 90.0;
             saldo -= valorDoSaque;
+            bool podeSacar = (saldo >= valorDoSaque);
+            bool realmentePodeSacar = (saldo >= valorDoSaque) && (valorDoSaque > 0);
+            bool podeSacarOU = (saldo >= valorDoSaque) || (valorDoSaque > 0);
 
-            if (saldo >= valorDoSaque)
+
+            if (podeSacarOU)
             {
                 saldo = saldo - valorDoSaque;
                 MessageBox.Show("Saque realizado com sucesso");
