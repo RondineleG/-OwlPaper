@@ -17,6 +17,9 @@ namespace WindowsApp
             double valorDoSaque = 10.0;
             saldo -= valorDoSaque;
 
+            int valor = 1;
+            long valorGrande = valor;
+
             MessageBox.Show("O saldo da conta após o saque é: " + saldo);
         }
     }
