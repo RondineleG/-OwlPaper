@@ -24,11 +24,20 @@ namespace WindowsApp
             bool podeSacarOU = (saldo >= valorDoSaque) || (valorDoSaque > 0);
 
             double valorInvestido = 1000.0;
-            for (int i = 1; i < 12; i++)
+            for (int i = 1; i <=12; i++)
             {
                 valorInvestido = valorInvestido * 1.01;
             }
-
+            MessageBox.Show("Valor investido agora é " + valorInvestido);
+            
+            valorInvestido = 1000.0;
+            
+            int valor = 1;
+            while (valor <=12)
+            {
+                valorInvestido = valorInvestido * 1.01;
+                valor += 1;
+            }
             MessageBox.Show("Valor investido agora é " + valorInvestido);
 
             if (podeSacarOU)
