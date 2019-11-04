@@ -8,5 +8,10 @@ namespace WindowsApp
         {
             InitializeComponent();
         }
+
+        private void brtClick_Click(object sender, System.EventArgs e)
+        {
+
+        }
     }
 }

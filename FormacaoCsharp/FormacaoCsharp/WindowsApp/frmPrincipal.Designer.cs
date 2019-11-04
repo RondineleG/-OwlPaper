@@ -33,12 +33,13 @@
             // 
             // brtClick
             // 
-            this.brtClick.Location = new System.Drawing.Point(145, 57);
+            this.brtClick.Location = new System.Drawing.Point(139, 77);
             this.brtClick.Name = "brtClick";
             this.brtClick.Size = new System.Drawing.Size(75, 23);
             this.brtClick.TabIndex = 0;
             this.brtClick.Text = "Click";
             this.brtClick.UseVisualStyleBackColor = true;
+            this.brtClick.Click += new System.EventHandler(this.brtClick_Click);
             // 
             // frmPrincipal
             // 
