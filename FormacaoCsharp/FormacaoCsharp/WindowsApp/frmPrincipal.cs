@@ -12,9 +12,12 @@ namespace WindowsApp
         private void brtClick_Click(object sender, System.EventArgs e)
         {
             int numeroDaConta = 1;
+           
             double saldo = 100.0;
-            
-          MessageBox.Show("Ola mundo c# ");
+            double valorDoSaque = 10.0;
+            saldo = saldo - valorDoSaque;
+
+            MessageBox.Show("O saldo da conta após o saque é: " + saldo);
         }
     }
 }
