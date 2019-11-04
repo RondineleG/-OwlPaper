@@ -20,6 +20,9 @@ namespace WindowsApp
             int valor = 1;
             long valorGrande = valor;
 
+            int valor = 1;
+            short valorPequeno = valor;
+
             MessageBox.Show("O saldo da conta após o saque é: " + saldo);
         }
     }
