@@ -16,5 +16,16 @@ namespace WindowsApp
         {
             InitializeComponent();
         }
+
+        private void btnCalculaMedia_Click(object sender, EventArgs e)
+        {
+            int idadeRondinele = 27;
+            int idadeGabriela = 26;
+            int idadeBeatriz = 4;
+
+            double mediaIdade = idadeRondinele + idadeGabriela + idadeBeatriz / 3;
+
+            MessageBox.Show("A media de idade e : " + mediaIdade);
+        }
     }
 }

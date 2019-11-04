@@ -28,12 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.btnCalculaMedia = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // btnCalculaMedia
+            // 
+            this.btnCalculaMedia.Location = new System.Drawing.Point(25, 67);
+            this.btnCalculaMedia.Name = "btnCalculaMedia";
+            this.btnCalculaMedia.Size = new System.Drawing.Size(103, 49);
+            this.btnCalculaMedia.TabIndex = 0;
+            this.btnCalculaMedia.Text = "Calcula Media";
+            this.btnCalculaMedia.UseVisualStyleBackColor = true;
+            this.btnCalculaMedia.Click += new System.EventHandler(this.btnCalculaMedia_Click);
+            // 
+            // frmEx01
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(479, 328);
+            this.Controls.Add(this.btnCalculaMedia);
+            this.Name = "frmEx01";
             this.Text = "frmEx01";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Button btnCalculaMedia;
     }
 }
