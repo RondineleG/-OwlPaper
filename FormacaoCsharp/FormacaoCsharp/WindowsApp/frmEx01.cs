@@ -28,6 +28,17 @@ namespace WindowsApp
             MessageBox.Show("A media de idade e : " + mediaIdade);
         }
 
+        private void btnPIQuebrado_Click(object sender, EventArgs e)
+        {
+            // Forcando conversao 
+            int piInt = (int)3.14;
+
+            double piDouble = 3.14;
+            int piQuebrado = (int)piDouble;
+            MessageBox.Show("piQuebrado = " + piQuebrado);
+            MessageBox.Show("piInt = " + piInt);
+        }
+
 
 
         /*
@@ -36,8 +47,7 @@ namespace WindowsApp
         
          */
 
-        // Forcando conversao 
-        int pi = (int)3.14;
+    
 
     }
 }

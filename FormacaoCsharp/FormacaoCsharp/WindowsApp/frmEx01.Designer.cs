@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.btnCalculaMedia = new System.Windows.Forms.Button();
+            this.btnPIQuebrado = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnCalculaMedia
@@ -41,11 +42,22 @@
             this.btnCalculaMedia.UseVisualStyleBackColor = true;
             this.btnCalculaMedia.Click += new System.EventHandler(this.btnCalculaMedia_Click);
             // 
+            // btnPIQuebrado
+            // 
+            this.btnPIQuebrado.Location = new System.Drawing.Point(159, 67);
+            this.btnPIQuebrado.Name = "btnPIQuebrado";
+            this.btnPIQuebrado.Size = new System.Drawing.Size(103, 49);
+            this.btnPIQuebrado.TabIndex = 0;
+            this.btnPIQuebrado.Text = "PI Quebrado";
+            this.btnPIQuebrado.UseVisualStyleBackColor = true;
+            this.btnPIQuebrado.Click += new System.EventHandler(this.btnPIQuebrado_Click);
+            // 
             // frmEx01
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(479, 328);
+            this.Controls.Add(this.btnPIQuebrado);
             this.Controls.Add(this.btnCalculaMedia);
             this.Name = "frmEx01";
             this.Text = "frmEx01";
@@ -56,5 +68,6 @@
         #endregion
 
         private System.Windows.Forms.Button btnCalculaMedia;
+        private System.Windows.Forms.Button btnPIQuebrado;
     }
 }
