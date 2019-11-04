@@ -15,5 +15,9 @@ public class Variaveis
        int oito = 4 * 2; //Multiplicacao
        int dezesseis = 64 / 4; // Divisao
        int um = 5 % 2; // 5 dividido por 2 dá 2 e tem resto 1, o operador % pega o resto da divisão inteira
-    }    
+
+       if (idade < 18) 
+       {
+        System.out.println("Não pode entrar");
+}      }    
 }
