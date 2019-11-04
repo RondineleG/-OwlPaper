@@ -4,5 +4,9 @@
         "**/.project": true,
         "**/.settings": true,
         "**/.factorypath": true
-    }
+    },
+    "python.linting.pylintEnabled": false,
+    "python.linting.enabled": true,
+    "python.linting.pycodestyleEnabled": true,
+    "python.pythonPath": "C:\\Users\\Dev\\AppData\\Local\\Programs\\Python\\Python38-32\\python.exe"
 }
