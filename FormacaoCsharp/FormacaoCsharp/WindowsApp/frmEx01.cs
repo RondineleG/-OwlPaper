@@ -23,9 +23,19 @@ namespace WindowsApp
             int idadeGabriela = 26;
             int idadeBeatriz = 4;
 
-            double mediaIdade = idadeRondinele + idadeGabriela + idadeBeatriz / 3;
+            double mediaIdade = (idadeRondinele + idadeGabriela + idadeBeatriz) / 3;
 
             MessageBox.Show("A media de idade e : " + mediaIdade);
         }
+
+        
+
+        /*
+        Mensage de errro : nao e possivel converte double pra int de forma implicira
+         int pi = 3.14;
+        
+         */
+
+      
     }
 }
