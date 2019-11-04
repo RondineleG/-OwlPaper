@@ -16,7 +16,7 @@
             "type": "java",
             "name": "Debug (Launch)-Principal",
             "request": "launch",
-            "mainClass": "OwllPaper.Principal"
+            "mainClass": "FormacaoJava.Principal"
         }
     ]
 }
