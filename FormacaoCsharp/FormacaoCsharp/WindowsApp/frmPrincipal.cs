@@ -11,8 +11,11 @@ namespace WindowsApp
 
         private void brtClick_Click(object sender, System.EventArgs e)
         {
-            int numeroDaConta = 1;
+            // Tipo que recebe numeros inteiroa
            
+            int numeroDaConta = 1;
+
+            // Tipo que recebe numeros reais
             double saldo = 100.0;
             double valorDoSaque = 10.0;
             saldo -= valorDoSaque;
@@ -24,9 +27,14 @@ namespace WindowsApp
 
             short valorPequeno = (short)valor;
 
+            // Tipo que recebe numeros conjunto de caracter
             string mensagem = "Minha Mensagem";
             MessageBox.Show(mensagem);
-
+            /*
+             
+             Bloco de comentario
+             
+             */
             string mensagem2 = "Olá ";
             string nome = "Rondinele";
 
