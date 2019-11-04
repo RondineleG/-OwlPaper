@@ -65,5 +65,17 @@ namespace WindowsApp
 
             MessageBox.Show(mensagem3);
         }
+
+        private void btnEx01_Click(object sender, System.EventArgs e)
+        {
+            var ex = new frmEx01();
+            ex.Show();
+        }
+
+        private void btnEx02_Click(object sender, System.EventArgs e)
+        {
+            var ex = new frmEx02();
+            ex.Show();
+        }
     }
 }
