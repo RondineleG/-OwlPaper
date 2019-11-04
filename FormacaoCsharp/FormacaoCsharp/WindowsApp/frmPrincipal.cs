@@ -24,7 +24,8 @@ namespace WindowsApp
 
             short valorPequeno = (short)valor;
 
-            MessageBox.Show("O saldo da conta após o saque é: " + saldo);
+            string mensagem = "Minha Mensagem";
+            MessageBox.Show(mensagem);
         }
     }
 }
