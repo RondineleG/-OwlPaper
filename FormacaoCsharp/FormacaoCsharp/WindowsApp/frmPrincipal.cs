@@ -31,6 +31,11 @@ namespace WindowsApp
             string nome = "Rondinele";
 
             MessageBox.Show(mensagem2 + nome);
+
+            int idade = 25;
+            string mensagem3 = "sua idade é: " + idade;
+
+            MessageBox.Show(mensagem3);
         }
     }
 }
