@@ -26,6 +26,11 @@ namespace WindowsApp
 
             string mensagem = "Minha Mensagem";
             MessageBox.Show(mensagem);
+
+            string mensagem2 = "Olá ";
+            string nome = "Rondinele";
+
+            MessageBox.Show(mensagem2 + nome);
         }
     }
 }
