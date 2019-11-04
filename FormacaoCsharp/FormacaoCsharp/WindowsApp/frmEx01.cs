@@ -28,7 +28,7 @@ namespace WindowsApp
             MessageBox.Show("A media de idade e : " + mediaIdade);
         }
 
-        
+
 
         /*
         Mensage de errro : nao e possivel converte double pra int de forma implicira
@@ -36,6 +36,8 @@ namespace WindowsApp
         
          */
 
-      
+        // Forcando conversao 
+        int pi = (int)3.14;
+
     }
 }
