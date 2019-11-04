@@ -20,7 +20,18 @@ namespace WindowsApp
             double valorDoSaque = 10.0;
             saldo -= valorDoSaque;
 
+            if (saldo >= valorDoSaque)
+            {
+                saldo = saldo - valorDoSaque;
+                MessageBox.Show("Saque realizado com sucesso");
+            }
+       
+        }
+   
+       public void MetodoAleatorioa()
+        {
             int valor = 1;
+
             long valorGrande = valor;
 
             //short valorPequeno = valor;
@@ -37,6 +48,7 @@ namespace WindowsApp
              */
             string mensagem2 = "Olá ";
             string nome = "Rondinele";
+
 
             MessageBox.Show(mensagem2 + nome);
 

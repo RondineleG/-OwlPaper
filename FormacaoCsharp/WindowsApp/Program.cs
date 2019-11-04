@@ -13,7 +13,7 @@ namespace WindowsApp
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmEx01());
+            Application.Run(new frmPrincipal());
         }
     }
 }
