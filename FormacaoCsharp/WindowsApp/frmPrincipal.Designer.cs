@@ -35,7 +35,7 @@
             // 
             // brtClick
             // 
-            this.brtClick.Location = new System.Drawing.Point(139, 77);
+            this.brtClick.Location = new System.Drawing.Point(178, 29);
             this.brtClick.Name = "brtClick";
             this.brtClick.Size = new System.Drawing.Size(75, 23);
             this.brtClick.TabIndex = 0;
