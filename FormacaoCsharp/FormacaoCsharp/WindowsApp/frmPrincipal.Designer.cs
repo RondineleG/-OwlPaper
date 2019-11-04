@@ -28,13 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.brtClick = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // brtClick
+            // 
+            this.brtClick.Location = new System.Drawing.Point(145, 57);
+            this.brtClick.Name = "brtClick";
+            this.brtClick.Size = new System.Drawing.Size(75, 23);
+            this.brtClick.TabIndex = 0;
+            this.brtClick.Text = "Click";
+            this.brtClick.UseVisualStyleBackColor = true;
+            // 
+            // frmPrincipal
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(342, 184);
+            this.Controls.Add(this.brtClick);
+            this.Name = "frmPrincipal";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Button brtClick;
     }
 }
 
