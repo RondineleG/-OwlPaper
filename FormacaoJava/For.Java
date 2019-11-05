@@ -1,7 +1,7 @@
 
 package FormacaoJava;
 
-public class Principal {
+public class LacoFor {
     public static void main(String [] args)
     {
     

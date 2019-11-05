@@ -1,7 +1,7 @@
 
 package FormacaoJava;
 
-public class While {
+public class LacoWhile {
     public static void main(String [] args)
     {
        int idade = 30;

@@ -22,6 +22,9 @@ public class Variaveis
        int dezesseis = 64 / 4; // Divisao
        int um = 5 % 2; // 5 dividido por 2 dá 2 e tem resto 1, o operador % pega o resto da divisão inteira
        
+       System.out.println(quatro + tres + oito + dezesseis + um);
+
+
        System.out.println(idadeNoAnoQueVem);
 
        if (idade < 18) 
@@ -39,9 +42,15 @@ public class Variaveis
        double x = 5 * 10;
        boolean verdade = true;
        idade = 30;
-
-       boolean menorDeIdade = idade <18;
-
+       
+       if(verdade == false)
+       {
+         System.out.println(idadeNoAnoQueVem);
+         pi = x;
+       }
+        int novoPI = (int) pi;
+       boolean menorDeIdade = (idade < 18) && (idade < novoPI);
+       System.out.println(menorDeIdade);
        char letra = 'A';
        System.out.println(letra);
 
@@ -53,8 +62,9 @@ public class Variaveis
 
       double d3 = 3.14;
        int ia = (int) d3;
-
+       System.out.println(ia);
        long xl = 10000;
+       System.out.println(xl);
        // int il = xl;  não compila, pois pode estar perdendo informação
 
 
