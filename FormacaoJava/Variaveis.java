@@ -1,7 +1,6 @@
 
 package FormacaoJava;
 
-<<<<<<< HEAD
 public class Variaveis 
 {
     public static void main(String [] args)
@@ -21,15 +20,6 @@ public class Variaveis
        {
         System.out.println("Não pode entrar");
 }      }    
-=======
-public class Principal {
-    public static void main(String [] args)
-    {
-    
-        int idade;
-        String nome;
-    
-    }    
->>>>>>> Devjava
+
 }
 
