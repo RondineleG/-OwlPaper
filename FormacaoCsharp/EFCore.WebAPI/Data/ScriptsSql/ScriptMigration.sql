@@ -52,3 +52,58 @@ VALUES (N'20191119115309_Inicial', N'2.2.6-servicing-10079');
 
 GO
 
+ALTER TABLE [Herois] DROP CONSTRAINT [FK_Herois_Batalhas_BatalhaId];
+
+GO
+
+DROP INDEX [IX_Herois_BatalhaId] ON [Herois];
+
+GO
+
+DECLARE @var0 sysname;
+SELECT @var0 = [d].[name]
+FROM [sys].[default_constraints] [d]
+INNER JOIN [sys].[columns] [c] ON [d].[parent_column_id] = [c].[column_id] AND [d].[parent_object_id] = [c].[object_id]
+WHERE ([d].[parent_object_id] = OBJECT_ID(N'[Herois]') AND [c].[name] = N'BatalhaId');
+IF @var0 IS NOT NULL EXEC(N'ALTER TABLE [Herois] DROP CONSTRAINT [' + @var0 + '];');
+ALTER TABLE [Herois] DROP COLUMN [BatalhaId];
+
+GO
+
+ALTER TABLE [Batalhas] ADD [DataInicio] datetime2 NOT NULL DEFAULT '0001-01-01T00:00:00.0000000';
+
+GO
+
+CREATE TABLE [HeroisBatalhas] (
+    [HeroiId] int NOT NULL,
+    [BatalhaId] int NOT NULL,
+    CONSTRAINT [PK_HeroisBatalhas] PRIMARY KEY ([BatalhaId], [HeroiId]),
+    CONSTRAINT [FK_HeroisBatalhas_Batalhas_BatalhaId] FOREIGN KEY ([BatalhaId]) REFERENCES [Batalhas] ([Id]) ON DELETE CASCADE,
+    CONSTRAINT [FK_HeroisBatalhas_Herois_HeroiId] FOREIGN KEY ([HeroiId]) REFERENCES [Herois] ([Id]) ON DELETE CASCADE
+);
+
+GO
+
+CREATE TABLE [IdentidadesSecretas] (
+    [Id] int NOT NULL IDENTITY,
+    [NomeReal] nvarchar(max) NULL,
+    [HeroiId] int NOT NULL,
+    CONSTRAINT [PK_IdentidadesSecretas] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_IdentidadesSecretas_Herois_HeroiId] FOREIGN KEY ([HeroiId]) REFERENCES [Herois] ([Id]) ON DELETE CASCADE
+);
+
+GO
+
+CREATE INDEX [IX_HeroisBatalhas_HeroiId] ON [HeroisBatalhas] ([HeroiId]);
+
+GO
+
+CREATE UNIQUE INDEX [IX_IdentidadesSecretas_HeroiId] ON [IdentidadesSecretas] ([HeroiId]);
+
+GO
+
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20191119130605_HeroisBatalhas_Identidade', N'2.2.6-servicing-10079');
+
+GO
+

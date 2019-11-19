@@ -6,6 +6,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Migrations\20191119130107_HeroisBatalhas.cs" />
+    <Compile Remove="Migrations\20191119130107_HeroisBatalhas.Designer.cs" />
+    <Compile Remove="Migrations\20191119130154_IdentidadeSecreta.cs" />
+    <Compile Remove="Migrations\20191119130154_IdentidadeSecreta.Designer.cs" />
+    <Compile Remove="Migrations\20191119130309_HeroisBatalhas.cs" />
+    <Compile Remove="Migrations\20191119130309_HeroisBatalhas.Designer.cs" />
+    <Compile Remove="Migrations\20191119130341_HeroisBatalhas.cs" />
+    <Compile Remove="Migrations\20191119130341_HeroisBatalhas.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
   </ItemGroup>
