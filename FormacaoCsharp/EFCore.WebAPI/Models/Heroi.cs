@@ -1,4 +1,6 @@
-﻿namespace EFCore.WebAPI.Models
+﻿using System.Collections.Generic;
+
+namespace EFCore.WebAPI.Models
 {
     public class Heroi
     {
@@ -6,9 +8,8 @@
 
         public string Nome { get; set; }
 
-        public Batalha Batalha { get; set; }
+        public List<Arma> Armas { get; set; }
 
-        public int BatalhaId { get; set; }
-
+        public List<HeroiBatalha> HeroiBatalhas { get; set; }
     }
 }
