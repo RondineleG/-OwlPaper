@@ -1,4 +1,4 @@
-package formacaojava;;
+package formacaojava;
 
 public class Aluno extends Pessoa{
     String curso;
