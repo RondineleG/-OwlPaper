@@ -1,7 +1,7 @@
 
-package FormacaoJava;
+package formacaojava;
 
-public class AClassePrincipal {
+public class ClassePrincipal {
     public static void main(String [] args)
     { 
         double notaJava = 10;
