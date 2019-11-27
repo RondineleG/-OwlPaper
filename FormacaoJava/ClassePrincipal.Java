@@ -1,5 +1,5 @@
 
-package FormacaoJava;
+package formacaojava;
 
 public class ClassePrincipal {
     public static void main(String [] args)
