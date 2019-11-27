@@ -1,5 +1,5 @@
 
-package FormacaoJava;
+package formacaojava;
 
 public class Pessoa {
     private String nome;
